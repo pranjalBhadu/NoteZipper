@@ -1,0 +1,16 @@
+.note-card {
+    margin: 10px;
+    width: 100%;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+.note-title {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+}
