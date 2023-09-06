@@ -4,14 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "Pranjal Bhadu",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.1",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0",
     "nodemon": "^3.0.1",
     "react-bootstrap": "^2.8.0"
   }
